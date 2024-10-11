@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Have I Ever - Teen Edition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #ff6347;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .statement {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Never Have I Ever - Teen Edition</h1>
+    <div class="container">
+        <div class="statement" id="statement">Click below to get a statement!</div>
+        <button onclick="getStatement()">New Statement</button>
+    </div>
+
+    <script>
+        const statements = [
+            "Never have I ever skipped school.",
+            "Never have I ever lied to my parents.",
+            "Never have I ever cheated on a test.",
+            "Never have I ever stayed up all night.",
+            "Never have I ever played a prank on someone.",
+            "Never have I ever had a crush on a teacher.",
+            "Never have I ever stolen something.",
+            "Never have I ever been in a fight.",
+            "Never have I ever broken a bone.",
+            "Never have I ever been on a rollercoaster.",
+            "Never have I ever laughed so hard I cried.",
+            "Never have I ever pulled an all-nighter for a project.",
+            "Never have I ever eaten an entire pizza by myself.",
+            "Never have I ever snuck out of the house.",
+            "Never have I ever been grounded.",
+            "Never have I ever tried to cut my own hair.",
+            "Never have I ever been on TV.",
+            "Never have I ever been to a concert.",
+            "Never have I ever been caught cheating on a test.",
+            "Never have I ever cried during a movie.",
+            "Never have I ever had a summer romance.",
+            "Never have I ever been stung by a bee.",
+            "Never have I ever lied about my age.",
+            "Never have I ever been lost in a store.",
+            "Never have I ever played video games all night.",
+            "Never have I ever sung in public.",
+            "Never have I ever embarrassed myself in front of a crush.",
+            "Never have I ever tripped in public.",
+            "Never have I ever laughed at the wrong moment.",
+            "Never have I ever lied to get out of trouble.",
+            "Never have I ever lost my phone.",
+            "Never have I ever been to a school dance.",
+            "Never have I ever sent a message to the wrong person.",
+            "Never have I ever been scared of the dark.",
+            "Never have I ever eaten something off the floor.",
+            "Never have I ever gone without a shower for more than 3 days.",
+            "Never have I ever been on a plane.",
+            "Never have I ever been in a car accident.",
+            "Never have I ever faked being sick to skip school.",
+            "Never have I ever stayed in my pajamas all day.",
+            "Never have I ever been late for school.",
+            "Never have I ever been sent to the principal’s office.",
+            "Never have I ever seen a shooting star.",
+            "Never have I ever been in a talent show.",
+            "Never have I ever lost a bet.",
+            "Never have I ever fainted.",
+            "Never have I ever cried in public.",
+            "Never have I ever had a food fight.",
+            "Never have I ever gotten detention.",
+            "Never have I ever lied to a teacher.",
+            "Never have I ever had a crush on a best friend.",
+            "Never have I ever sent a love letter.",
+            "Never have I ever confessed my feelings to someone.",
+            "Never have I ever had a secret crush.",
+            "Never have I ever been on a date.",
+            "Never have I ever flirted with someone.",
+            "Never have I ever had my heart broken.",
+            "Never have I ever kissed someone.",
+            "Never have I ever slow-danced with someone.",
+            "Never have I ever been rejected by someone I liked.",
+            "Never have I ever had a crush on someone in this room.",
+            "Never have I ever stalked someone on social media.",
+            "Never have I ever talked to someone all night long.",
+            "Never have I ever been jealous of someone’s relationship.",
+            "Never have I ever dated someone.",
+            "Never have I ever pretended to like someone just to be nice.",
+            "Never have I ever lied about having a crush.",
+            "Never have I ever written a romantic poem.",
+            "Never have I ever gone out with a friend’s ex.",
+            "Never have I ever tried online dating.",
+            "Never have I ever danced with someone at a party.",
+            "Never have I ever hugged someone for more than a minute.",
+            "Never have I ever been friend-zoned.",
+            "Never have I ever given a fake number to someone.",
+            "Never have I ever held someone’s hand in public.",
+            "Never have I ever gone on a double date.",
+            "Never have I ever secretly loved someone older than me.",
+            "Never have I ever watched a romantic movie and cried.",
+            "Never have I ever had a crush on someone I’ve never met.",
+            "Never have I ever played 'truth or dare' and picked 'dare'.",
+            "Never have I ever blushed when talking to someone I liked."
+        ];
+
+        function getStatement() {
+            const randomIndex = Math.floor(Math.random() * statements.length);
+            document.getElementById('statement').innerText = statements[randomIndex];
+        }
+    </script>
+</body>
+</html>
